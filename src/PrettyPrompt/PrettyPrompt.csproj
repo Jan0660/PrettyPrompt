@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Version>4.0.6</Version>
+    <Version>4.0.6.1</Version>
 
-    <PackageId>PrettyPrompt</PackageId>
+    <PackageId>Jan0660.PrettyPrompt</PackageId>
     <PackageTags>repl readline console cli</PackageTags>
-    <PackageProjectUrl>https://github.com/waf/PrettyPrompt</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Jan0660/PrettyPrompt</PackageProjectUrl>
     <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
 
-    <Description>A command line prompt (i.e. a Console.ReadLine replacement) that provides syntax highlighting, autocomplete menus, history, and multi-line input.</Description>
-    <RepositoryUrl>https://github.com/waf/PrettyPrompt</RepositoryUrl>
+    <Description>A fork of PrettyPrompt with setters on properties.</Description>
+    <RepositoryUrl>https://github.com/Jan0660/PrettyPrompt</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <Authors>Will Fuqua</Authors>
     <Company />
