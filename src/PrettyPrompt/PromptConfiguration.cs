@@ -30,8 +30,8 @@ public class PromptConfiguration
     public AnsiColor? CompletionItemDescriptionPaneBackground { get; }
     public FormattedString SelectedCompletionItemMarker { get; }
     public string UnselectedCompletionItemMarker { get; }
-    public AnsiColor? SelectedCompletionItemBackground { get; }
-    public AnsiColor? SelectedTextBackground { get; }
+    public AnsiColor? SelectedCompletionItemBackground { get; set; }
+    public AnsiColor? SelectedTextBackground { get; set; }
 
     /// <summary>
     /// How few completion items we are willing to render. If we do not have a space for rendering of
@@ -39,14 +39,17 @@ public class PromptConfiguration
     /// </summary>
     public int MinCompletionItemsCount { get; }
 
-    public int MaxCompletionItemsCount { get; }
+    /// <summary>
+    /// How many completion items we are willing to render at once.
+    /// </summary>
+    public int MaxCompletionItemsCount { get; set; }
 
     /// <summary>
-    /// Determines maximum verical space allocated under current input line for completion pane.
+    /// Determines maximum vertical space allocated under current input line for completion pane.
     /// </summary>
-    public double ProportionOfWindowHeightForCompletionPane { get; }
+    public double ProportionOfWindowHeightForCompletionPane { get; set; }
 
-    public int TabSize { get; }
+    public int TabSize { get; set; }
 
     public PromptConfiguration(
         KeyBindings? keyBindings = null,

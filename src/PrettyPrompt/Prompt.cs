@@ -31,6 +31,8 @@ public sealed class Prompt : IPrompt, IAsyncDisposable
     private readonly IPromptCallbacks promptCallbacks;
     private Task? savePersistentHistoryTask;
 
+    public PromptConfiguration Configuration => configuration;
+
     /// <summary>
     /// Instantiates a prompt object. This object can be re-used for multiple invocations of <see cref="ReadLineAsync()"/>.
     /// </summary>
